@@ -1,0 +1,35 @@
+.home{
+&>div{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+}
+#text {
+    text-align: center;
+    color: #333;
+    max-width: 600px; 
+    padding: 0 10px ;
+  }
+  
+  #text h1 {
+   margin-top: 200px;
+   color: #fff;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  
+  
+  #text img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    #text {
+      flex-direction: column;
+    }}

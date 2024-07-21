@@ -26,7 +26,7 @@ const projects = [
     title: "Music",
     image: musicImage,
     description: "bir nerse bir nerse bir nerse bir nerse  ",
-    link: "https://food-ro9g.vercel.app/"
+    link: "https://musical-12.vercel.app/"
   },
   {
     title: "Skycity",
@@ -42,7 +42,7 @@ const projects = [
   },
 
 ];
-
+import { useTranslation } from "react-i18next";
 const Project = () => {
   const settings = {
     dots: true,
@@ -72,7 +72,7 @@ const Project = () => {
       }
     ]
   };
-
+  const { t } = useTranslation();
   return (
     <div className="container">
       <Slider {...settings}>
@@ -82,7 +82,7 @@ const Project = () => {
             <div className='project-text'>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">{t("View Project")}</a>
             </div>
           </div>
         ))}

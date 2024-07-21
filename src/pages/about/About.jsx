@@ -4,8 +4,10 @@ import lampa2 from "../../assets/image.png"
 
 import { FaDownload } from "react-icons/fa";
 import "./about.css"
+import { useTranslation } from "react-i18next";
 const About = () => {
   const [activeTab, setActiveTab] = useState("skills");
+  const { t } = useTranslation();
 
   const handleTabClick = (tabName) => {
     setActiveTab(tabName);
@@ -26,6 +28,7 @@ const About = () => {
   };
 
   return (
+
     <div className="container about">
       {/* <img className="lampa" src={lampa} alt="" /> */}
       <div className="text">
@@ -36,26 +39,26 @@ const About = () => {
         </h1>
         <br />
 
-        <h4>Hi, my name is Amangeldi</h4>
+        <h4>{t("Hi, my name is Amangeldi")}</h4>
         <button className="Download" onClick={handleDownload}>
-          <FaDownload className="Down" /> Download CV
+          <FaDownload className="Down" />{t("Download CV")}
         </button>
         <div className="namer">
           <div>
             <h3>0</h3>
-            <h5>YEARS OF <br /> EXPERIENCE</h5>
+            <h5>{t("YEARS OF")} <br /> {t("EXPERIENCE")}</h5>
           </div>
           <div>
             <h3>0</h3>
-            <h5>SATISFIED <br /> CLIENTS</h5>
+            <h5>{t("SATISFIED")}  <br />{t("CLIENTS")} </h5>
           </div>
           <div>
-            <h3>0</h3>
-            <h5>FINISHED <br /> PROJECTS</h5>
+            <h3>4</h3>
+            <h5>{t("FINISHED")} <br />{t("PROJECTS")} </h5>
           </div>
           <div>
-            <h3>0</h3>
-            <h5>PET <br /> PROJECTS</h5>
+            <h3>3</h3>
+            <h5> {t("PET")} <br />{t("PROJECTS")} </h5>
           </div>
         </div>
       </div>
@@ -65,19 +68,19 @@ const About = () => {
             className={activeTab === "skills" ? "active" : ""}
             onClick={() => handleTabClick("skills")}
           >
-            Skills
+            {t("Skills")}
           </button>
           <button
             className={activeTab === "awards" ? "active" : ""}
             onClick={() => handleTabClick("awards")}
           >
-            Experience
+            {t("Experience")}
           </button>
           <button
             className={activeTab === "certifications" ? "active" : ""}
             onClick={() => handleTabClick("certifications")}
           >
-            Certifications
+           {t("Certifications")} 
           </button>
         </div>
         <div className="tab-content">

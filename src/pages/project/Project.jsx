@@ -32,7 +32,7 @@ const projects = [
     title: "Skycity",
     image: skycityImage,
     description: "react ",
-    link: "https://skycity-gnoxj0if9-aman-mairambek-uulus-projects.vercel.app/"
+    link: "https://skycity-3lv3-aman-mairambek-uulus-projects.vercel.app/"
   },
   {
     title: "Exlusive",

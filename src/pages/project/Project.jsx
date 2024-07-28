@@ -13,31 +13,31 @@ const projects = [
   {
     title: "Food",
     image: foodImage,
-    description: "bir nerse bir nerse bir nerse bir nerse  ",
+    description: "react ",
     link: "https://food-ro9g.vercel.app/"
   },
   {
     title: "Weather",
     image: weatgerImage,
-    description: "bir nerse bir nerse bir nerse bir nerse  ",
+    description: "react ",
     link: "https://weather111.vercel.app/"
   },
   {
     title: "Music",
     image: musicImage,
-    description: "bir nerse bir nerse bir nerse bir nerse  ",
+    description: "react ",
     link: "https://musical-12.vercel.app/"
   },
   {
     title: "Skycity",
     image: skycityImage,
-    description: "bir nerse bir nerse bir nerse bir nerse  ",
+    description: "react ",
     link: "https://skycity-gnoxj0if9-aman-mairambek-uulus-projects.vercel.app/"
   },
   {
     title: "Exlusive",
     image: exlusiveImage,
-    description: "bir nerse bir nerse bir nerse bir nerse  ",
+    description: "react ",
     link: "https://ex-store-tau.vercel.app/"
   },
 

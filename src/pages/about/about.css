@@ -76,7 +76,15 @@
     background: transparent;
     animation: moveUpDown 1s infinite alternate; /* Название анимации, время, повторение, альтернативные направления */
   }
-  
+  .certificationsGeneral{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .certifications{
+    width: 200px;
+    margin:10px;
+  }
   @keyframes moveUpDown {
     
     0% {

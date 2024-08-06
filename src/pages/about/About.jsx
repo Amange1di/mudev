@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 // import lampa from "../../assets/image.png"
 import lampa2 from "../../assets/image.png"
+import okurmen from "../../assets/ser.png"
 
 import { FaDownload } from "react-icons/fa";
 import "./about.css"
@@ -57,7 +58,7 @@ const About = () => {
             <h5>{t("FINISHED")} <br />{t("PROJECTS")} </h5>
           </div>
           <div>
-            <h3>3</h3>
+            <h3>2</h3>
             <h5> {t("PET")} <br />{t("PROJECTS")} </h5>
           </div>
         </div>
@@ -108,8 +109,18 @@ const About = () => {
               </ul>
             </div>
           )}
-          {activeTab === "awards" && <div></div>}
-          {activeTab === "certifications" && <div></div>}
+          {activeTab === "awards" && <div>
+            aman
+            
+            </div>}
+          {activeTab === "certifications" && <div className="certificationsGeneral">
+            
+            <img className="certifications" src={okurmen} alt="" />
+            <img className="certifications" src={okurmen} alt="" />
+            <img className="certifications" src={okurmen} alt="" />
+            <img className="certifications" src={okurmen} alt="" />
+            
+            </div>}
         </div>
         <img className="lampa2" src={lampa2} alt="" />
       </div>

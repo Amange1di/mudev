@@ -12,11 +12,12 @@ const Home = () => {
       <div id="text">
         <h1>
          {t("I am a Front-End Developer")}  <br />
-          <span>{t("I live in Bishkek, Kyrgyzstan.")}</span>
+          <span>{t("I live in Osh, Kyrgyzstan.")}</span>
         </h1>
 
       
-      </div>  <img src={user} alt="user" />
+      </div>
+        {/* <img src={user} alt="user" /> */}
     </div>
     </div>
   )

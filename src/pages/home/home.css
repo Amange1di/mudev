@@ -20,17 +20,29 @@
    color: #fff;
     font-weight: 700;
     margin-bottom: 20px;
+    
   }
   
   
   
-  #text img {
+  /* #text img {
     max-width: 100%;
     height: auto;
     margin-top: 20px;
-  }
+  } */
   
   @media (max-width: 768px) {
     #text {
+     
       flex-direction: column;
-    }}
+    }
+  
+    .home >div {
+      flex-direction: column-reverse;
+    }
+
+    .user{
+      width: 400px;
+      margin-bottom: -100px;
+    }
+  }

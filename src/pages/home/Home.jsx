@@ -15,9 +15,9 @@ const Home = () => {
           <span>{t("I live in Osh, Kyrgyzstan.")}</span>
         </h1>
 
-      
+       
       </div>
-        {/* <img src={user} alt="user" /> */}
+      <img className='user'  width={600} src={user} alt="user" />
     </div>
     </div>
   )

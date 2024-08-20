@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-// import lampa from "../../assets/image.png"
-import lampa2 from "../../assets/image.png"
-import okurmen from "../../assets/ser.png"
-
 import { FaDownload } from "react-icons/fa";
-import "./about.css"
 import { useTranslation } from "react-i18next";
+import "./about.css";
+import lampa2 from "../../assets/image.png";
+import okurmen from "../../assets/ser.png";
+import resume from './resume.pdf'; // Импортируйте PDF-файл
+
 const About = () => {
   const [activeTab, setActiveTab] = useState("skills");
   const { t } = useTranslation();
@@ -15,11 +15,8 @@ const About = () => {
   };
 
   const handleDownload = () => {
-    // Replace 'ppp.pdf' with the actual URL or path to your PDF file
-    const pdfUrl = 'ppp.pdf';
-    
     const link = document.createElement('a');
-    link.href = pdfUrl;
+    link.href = resume; // Используйте импортированный путь
     link.setAttribute('download', 'resume.pdf');
     
     document.body.appendChild(link);
@@ -29,17 +26,14 @@ const About = () => {
   };
 
   return (
-
     <div className="container about">
-      {/* <img className="lampa" src={lampa} alt="" /> */}
       <div className="text">
         <h1>
           <span>Simplicity </span>  
-             and <span>  functionality </span>  
-           in every line of <span>code.</span>
+          and <span> functionality </span>  
+          in every line of <span>code.</span>
         </h1>
         <br />
-
         <h4>{t("Hi, my name is Amangeldi")}</h4>
         <button className="Download" onClick={handleDownload}>
           <FaDownload className="Down" />{t("Download CV")}
@@ -81,7 +75,7 @@ const About = () => {
             className={activeTab === "certifications" ? "active" : ""}
             onClick={() => handleTabClick("certifications")}
           >
-           {t("Certifications")} 
+            {t("Certifications")} 
           </button>
         </div>
         <div className="tab-content">
@@ -91,38 +85,35 @@ const About = () => {
                 <li>
                   <img
                     src="https://skillicons.dev/icons?i=html,css,js"
-                    alt=""
+                    alt="Skills icons"
                   />
                 </li>
                 <li>
                   <img
                     src="https://skillicons.dev/icons?i=react,vite,redux"
-                    alt=""
+                    alt="Skills icons"
                   />
                 </li>
                 <li>
                   <img
                     src="https://skillicons.dev/icons?i=scss,tailwind,bootstrap"
-                    alt=""
+                    alt="Skills icons"
                   />
                 </li>
               </ul>
             </div>
           )}
-          {activeTab === "awards" && <div>
-            aman
-            
-            </div>}
-          {activeTab === "certifications" && <div className="certificationsGeneral">
-            
-            <img className="certifications" src={okurmen} alt="" />
-            <img className="certifications" src={okurmen} alt="" />
-            <img className="certifications" src={okurmen} alt="" />
-            <img className="certifications" src={okurmen} alt="" />
-            
-            </div>}
+          {activeTab === "awards" && <div>aman</div>}
+          {activeTab === "certifications" && (
+            <div className="certificationsGeneral">
+              <img className="certifications" src={okurmen} alt="Certification" />
+              <img className="certifications" src={okurmen} alt="Certification" />
+              <img className="certifications" src={okurmen} alt="Certification" />
+              <img className="certifications" src={okurmen} alt="Certification" />
+            </div>
+          )}
         </div>
-        <img className="lampa2" src={lampa2} alt="" />
+        <img className="lampa2" src={lampa2} alt="Lamp" />
       </div>
     </div>
   );

@@ -17,6 +17,12 @@ const projects = [
     link: "https://food-ro9g.vercel.app/"
   },
   {
+    title: "Exlusive",
+    image: exlusiveImage,
+    description: "react ",
+    link: "https://ex-store-tau.vercel.app/"
+  },
+  {
     title: "Weather",
     image: weatgerImage,
     description: "react ",
@@ -34,12 +40,7 @@ const projects = [
     description: "react ",
     link: "https://skycity-3lv3-aman-mairambek-uulus-projects.vercel.app/"
   },
-  {
-    title: "Exlusive",
-    image: exlusiveImage,
-    description: "react ",
-    link: "https://ex-store-tau.vercel.app/"
-  },
+  
 
 ];
 import { useTranslation } from "react-i18next";

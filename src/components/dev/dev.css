@@ -1,0 +1,45 @@
+/* dev.css */
+.dev {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box; /* Это нужно, чтобы padding не увеличивал ширину блока */
+}
+
+.icon-dev {
+  font-size: 25px;
+  margin: 0 10px;
+  color: #fff;
+}
+
+.dev h1 {
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+}
+
+.dev h1 span {
+  font-size: 25px;
+  font-weight: 600;
+  color: gold;
+}
+
+@media (max-width: 768px) {
+  .dev {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px; /* Обеспечивает отступы внутри блока */
+  }
+
+  .dev-i {
+    margin-top: 15px;
+  }
+
+  .dev h1 {
+    text-align: center;
+  }
+}

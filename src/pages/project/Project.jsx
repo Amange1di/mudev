@@ -34,12 +34,7 @@ const projects = [
     description: "react ",
     link: "https://musical-12.vercel.app/"
   },
-  {
-    title: "Skycity",
-    image: skycityImage,
-    description: "react ",
-    link: "https://skycity-3lv3-aman-mairambek-uulus-projects.vercel.app/"
-  },
+
   
 
 ];

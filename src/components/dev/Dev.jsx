@@ -13,7 +13,7 @@ const Dev = () => {
   return (
     <div className="">
     <div className="dev">
-      <h1>Amangeldi <span>dev</span></h1>
+      <h1>Eldar <span>dev</span></h1>
       <div className="dev-i">
       <select
             onChange={handleChangeLang}
@@ -27,15 +27,15 @@ const Dev = () => {
             <option value="ru">Ru</option>
           
           </select>
-        <a href="https://www.instagram.com/_.amangeldi_._/">
+        <a href="https://www.instagram.com/eldar_nurdinov/">
           <FaInstagram className="icon-dev" />
         </a>
-        <a href="https://github.com/Amange1di">
+        <a href="https://github.com/Eldarnurdinov">
           <FiGithub className="icon-dev" />
         </a>
-        <a href="https://web.telegram.org/k/#6528750190">
+        {/* <a href="https://web.telegram.org/k/#6528750190">
           <RiTelegramLine className="icon-dev" />
-        </a>
+        </a> */}
       </div>
     </div></div>
   );

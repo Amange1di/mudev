@@ -6,8 +6,7 @@ const Contact = () => {
     <div className="contact-container">
       <h2>Контактная информация</h2>
       <address className="contact-details">
-        {/* <p>+996 706 343 568</p> */}
-        <p><a href="mailto:amangeldi2702006@gmail.com">amangeldi2702006@gmail.com</a></p>
+        <p>+996 500 033 864</p>
       </address>
     </div>
   )

@@ -12,7 +12,7 @@ const Home = () => {
       <div id="text">
         <h1>
          {t("I am a Front-End Developer")}  <br />
-          <span>{t("I live in Osh, Kyrgyzstan.")}</span>
+          <span>{t("I live in Bishkek, Kyrgyzstan.")}</span>
         </h1>
 
        

@@ -34,7 +34,7 @@ const About = () => {
           in every line of <span>code.</span>
         </h1>
         <br />
-        <h4>{t("Hi, my name is Amangeldi")}</h4>
+        <h4>{t("Hi, my name is Eldar")}</h4>
         <button className="Download" onClick={handleDownload}>
           <FaDownload className="Down" />{t("Download CV")}
         </button>
@@ -103,7 +103,7 @@ const About = () => {
               </ul>
             </div>
           )}
-          {activeTab === "awards" && <div>aman</div>}
+          {activeTab === "awards" && <div></div>}
           {activeTab === "certifications" && (
             <div className="certificationsGeneral">
               <img className="certifications" src={okurmen} alt="Certification" />

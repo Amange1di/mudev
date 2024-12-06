@@ -5,6 +5,7 @@ import weatgerImage from '../../assets/weather.png';
 import musicImage from '../../assets/music.png';
 import skycityImage from '../../assets/skycity.png';
 import exlusiveImage from '../../assets/exclusive.png';
+import portendImage from '../../assets/porten.png';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './project.css'; // Импортируем файл стилей CSS для компонента Project
@@ -13,6 +14,12 @@ const projects = [
   {
     title: "Food",
     image: foodImage,
+    description: "react ",
+    link: "https://food-ro9g.vercel.app/"
+  },
+  {
+    title: "Portend",
+    image: portendImage,
     description: "react ",
     link: "https://food-ro9g.vercel.app/"
   },

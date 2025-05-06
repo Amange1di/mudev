@@ -20,14 +20,12 @@ const projects = [
   },
   {
     title: "Академия",
-    image: academyImage,
-    description: "Ислам академиясынын сайты, React менен жасалган",
+    description: "Ислам академиясынын сайты, ",
     link: ""
   },
   {
     title: "Библиотека",
-    image: libraryImage,
-    description: "Китепкана сайты, React менен",
+    description: "Китепкана сайты,",
     link: ""
   },
   {

@@ -24,6 +24,12 @@ const projects = [
     link: "https://food-ro9g.vercel.app/"
   },
   {
+    title: "Ноокат администрациясы",
+    image: portendImage,
+    description: "Ноокат администрациясы ",
+    link: "https://nookat.gov.kg/"
+  },
+  {
     title: "Exlusive",
     image: exlusiveImage,
     description: "react ",

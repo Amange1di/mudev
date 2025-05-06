@@ -6,6 +6,7 @@ import musicImage from '../../assets/music.png';
 import skycityImage from '../../assets/skycity.png';
 import exlusiveImage from '../../assets/exclusive.png';
 import portendImage from '../../assets/porten.png';
+import nookatImage from "../../assets/admin.png"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './project.css'; // Импортируем файл стилей CSS для компонента Project
@@ -18,6 +19,18 @@ const projects = [
     link: "https://food-ro9g.vercel.app/"
   },
   {
+    title: "Академия",
+    image: academyImage,
+    description: "Ислам академиясынын сайты, React менен жасалган",
+    link: ""
+  },
+  {
+    title: "Библиотека",
+    image: libraryImage,
+    description: "Китепкана сайты, React менен",
+    link: ""
+  },
+  {
     title: "Portend",
     image: portendImage,
     description: "react ",
@@ -25,7 +38,7 @@ const projects = [
   },
   {
     title: "Ноокат администрациясы",
-    image: ,
+    image: nookatImage,
     description: "Ноокат администрациясы ",
     link: "https://nookat.gov.kg/"
   },
@@ -53,9 +66,9 @@ const projects = [
     description: "react ",
     link: "https://skycity-3lv3-aman-mairambek-uulus-projects.vercel.app/"
   },
-  
 
 ];
+
 import { useTranslation } from "react-i18next";
 const Project = () => {
   const settings = {

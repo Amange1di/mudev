@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Ноокат администрациясы",
-    image: portendImage,
+    image: ,
     description: "Ноокат администрациясы ",
     link: "https://nookat.gov.kg/"
   },

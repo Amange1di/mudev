@@ -52,6 +52,7 @@ const projects = [
     description: "react ",
     link: "https://weather111.vercel.app/"
   },
+  
   {
     title: "Music",
     image: musicImage,

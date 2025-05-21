@@ -10,6 +10,7 @@
 .project-item{
   padding-top:100px ;
     display: flex;
+    font-weight: ;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;

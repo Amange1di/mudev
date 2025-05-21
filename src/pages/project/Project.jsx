@@ -12,12 +12,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './project.css'; // Импортируем файл стилей CSS для компонента Project
 
 const projects = [
-  {
-    title: "Food",
-    image: foodImage,
-    description: "react ",
-    link: "https://food-ro9g.vercel.app/"
-  },
+
   {
     title: "Академия",
     description: "Ислам академиясынын сайты, ",
@@ -28,13 +23,7 @@ const projects = [
     description: "Китепкана сайты,",
     link: ""
   },
-  {
-    title: "Portend",
-    image: portendImage,
-    description: "react ",
-    link: "https://food-ro9g.vercel.app/"
-  },
-  {
+    {
     title: "Ноокат администрациясы",
     image: nookatImage,
     description: "Ноокат администрациясы ",
@@ -58,13 +47,13 @@ const projects = [
     image: musicImage,
     description: "react ",
     link: "https://musical-12.vercel.app/"
-  },
-  {
-    title: "Skycity",
-    image: skycityImage,
+  },  {
+    title: "Food",
+    image: foodImage,
     description: "react ",
-    link: "https://skycity-3lv3-aman-mairambek-uulus-projects.vercel.app/"
+    link: "https://food-ro9g.vercel.app/"
   },
+
 
 ];
 
@@ -76,9 +65,9 @@ const Project = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    arrows: false, // Убираем кнопки "влево" и "вправо"
-    autoplay: true, // Включаем автоплей
-    autoplaySpeed: 10000, // Устанавливаем скорость автоплея в миллисекундах (10 секунд)
+    arrows: false,
+    autoplay: true, 
+    autoplaySpeed: 10000, 
     responsive: [
       {
         breakpoint: 1024,
@@ -90,7 +79,7 @@ const Project = () => {
         }
       },
       {
-        breakpoint: 850, // Изменяем breakpoint с 600 на 850
+        breakpoint: 850,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
